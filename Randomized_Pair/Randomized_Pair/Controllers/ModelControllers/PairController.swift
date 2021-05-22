@@ -14,7 +14,7 @@ class PairController {
     
     //SOT
     var pairs: [Pair] = []
-    var peoplePerGroup = 2
+    var peoplePerGroup: Int = 2
     
     //MARK: - Functions
     //CRUD
@@ -27,6 +27,11 @@ class PairController {
     func delete(pair: Pair) {
         guard let index = pairs.firstIndex(of: pair) else { return }
         pairs.remove(at: index)
+        saveToPersistenceStore()
+    }
+    
+    func update(pair: Pair, name: String, row: Int) {
+        pair.people[row].name = name
         saveToPersistenceStore()
     }
     
