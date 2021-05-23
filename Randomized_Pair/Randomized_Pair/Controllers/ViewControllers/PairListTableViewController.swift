@@ -39,7 +39,7 @@ class PairListTableViewController: UITableViewController {
     
     //MARK: - Functions
     func updatePickerView() {
-        let number = PairController.sharedInstance.pairs[0].people.count
+        let number = PairController.sharedInstance.pairs.isEmpty ? 2 : PairController.sharedInstance.pairs[0].people.count
         
         PairController.sharedInstance.peoplePerGroup = number
         picker.selectRow(number-2, inComponent: 0, animated: true)

@@ -32,6 +32,7 @@
                                     <rect key="frame" x="328" y="0.0" width="86" height="44"/>
                                 </pickerView>
                             </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="0.48836997329004556" colorSpace="custom" customColorSpace="sRGB"/>
                         </stackView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personCell" id="my0-ma-hr1">
